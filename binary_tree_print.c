@@ -15,6 +15,14 @@
  *
  * Return: length of printed tree after process
  */
+/*
+1. It’s creating a 2D array of strings.
+2. It’s calling the print_t function to print the tree.
+3. It’s printing the 2D array of strings.
+*/
+/*
+Time Complexity: O(n)
+*/
 static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 {
 	char b[6];
@@ -50,6 +58,15 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
  *
  * Return: The height of the tree starting at @node
  */
+/*
+1. If the tree is NULL, return 0.
+2. If the tree is not NULL, return the height of the left subtree + 1.
+3. If the tree is not NULL, return the height of the right subtree + 1.
+4. Return the max of the left and right subtrees.
+*/
+/*
+Time Complexity: O(n)
+*/
 static size_t _height(const binary_tree_t *tree)
 {
 	size_t height_l;
@@ -65,6 +82,14 @@ static size_t _height(const binary_tree_t *tree)
  *
  * @tree: Pointer to the root node of the tree to print
  */
+/*
+1. It’s creating a 2D array of strings.
+2. It’s calling a function print_t to fill the 2D array with the tree’s values.
+3. It’s printing the 2D array.
+*/
+/*
+Time Complexity: O(n)
+*/
 void binary_tree_print(const binary_tree_t *tree)
 {
 	char **s;
