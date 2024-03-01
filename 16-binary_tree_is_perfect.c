@@ -22,7 +22,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
  * @tree: pointer to the root of the binary tree
  * @leaf_level: level of the a leaf in the binary tree
  * @level: current level of the tree
- * 
+ *
  * Return: 1 if tree is perfect, 0 otherwise
  */
 int binary_tree_is_perfect_recursive(const binary_tree_t *tree,
